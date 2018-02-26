@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFrontEnd", "WindowsFrontEnd\WindowsFrontEnd.csproj", "{D3BA9B2C-806B-4761-97FE-2FA82CE006B4}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomGeneration", "RandomGeneration\RandomGeneration.csproj", "{43DF421E-C4C8-46A3-92A3-C6575F9457CA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixelPicture", "PixelPicture\PixelPicture.csproj", "{DF4AF156-5852-4094-A6DF-8A14B5CA5919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexTools", "C:\Users\User\Desktop\HexagonGridGenerator\HexTools\HexTools.csproj", "{6F2C7B9D-614C-4C42-A501-39680533BCD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{DF4AF156-5852-4094-A6DF-8A14B5CA5919}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF4AF156-5852-4094-A6DF-8A14B5CA5919}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF4AF156-5852-4094-A6DF-8A14B5CA5919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2C7B9D-614C-4C42-A501-39680533BCD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2C7B9D-614C-4C42-A501-39680533BCD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2C7B9D-614C-4C42-A501-39680533BCD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2C7B9D-614C-4C42-A501-39680533BCD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{4B1BCFFA-1AD0-4A2B-BDE9-D7CCD73EDA6B} = {AE1D2326-0799-4B3B-8EF7-93DE6DDFFDFD}
 		{43DF421E-C4C8-46A3-92A3-C6575F9457CA} = {9D92B853-2FB0-4B72-A01A-2315EC854B5F}
 		{DF4AF156-5852-4094-A6DF-8A14B5CA5919} = {AE1D2326-0799-4B3B-8EF7-93DE6DDFFDFD}
+		{6F2C7B9D-614C-4C42-A501-39680533BCD2} = {9D92B853-2FB0-4B72-A01A-2315EC854B5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6148AB66-F30F-4D61-B397-EB1C9CA00453}

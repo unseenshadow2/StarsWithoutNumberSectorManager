@@ -28,5 +28,6 @@ namespace DBAccess
         public DbSet<Adventure> adventures { get; set; }
         public DbSet<FactionAsset> factionAssets { get; set; }
         public DbSet<NPC> npcs { get; set; }
+		public DbSet<Star> stars { get; set; }
     }
 }

@@ -13,21 +13,23 @@ namespace WindowsFrontEnd
 {
     static class Program
     {
+		public const string Title = "Stars Without Number Sector Manager";
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            using (SectorContext db = new SectorContext())
-            {
-                Planet p = new Planet();
-                p.name = "roar";
+            //using (SectorContext db = new SectorContext())
+            //{
+            //    Planet p = new Planet();
+            //    p.name = "roar";
 
-                db.planets.Add(p);
+            //    db.planets.Add(p);
 
-                db.SaveChanges();
-            }
+            //    db.SaveChanges();
+            //}
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

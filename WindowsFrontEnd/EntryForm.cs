@@ -16,5 +16,10 @@ namespace WindowsFrontEnd
         {
             InitializeComponent();
         }
-    }
+
+		private void EntryForm_Load(object sender, EventArgs e)
+		{
+			Text = Program.Title;
+		}
+	}
 }

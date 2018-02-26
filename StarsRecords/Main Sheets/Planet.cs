@@ -13,6 +13,8 @@ namespace StarsRecords.Main_Sheets
     {
         public int id { get; set; }
         public string name { get; set; }
+		public int locX { get; set; }
+		public int locY { get; set; }
         public string enemies { get; set; }
         public string friends { get; set; }
         public string complications { get; set; }

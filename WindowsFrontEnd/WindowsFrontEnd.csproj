@@ -105,6 +105,10 @@
       <Project>{fc699929-f8aa-4ae0-969a-a59b19ebeb1c}</Project>
       <Name>DBAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MapDrawer\MapDrawer.csproj">
+      <Project>{e49455b7-cb17-486a-9e9f-66a620c73c25}</Project>
+      <Name>MapDrawer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RandomGeneration\RandomGeneration.csproj">
       <Project>{43df421e-c4c8-46a3-92a3-c6575f9457ca}</Project>
       <Name>RandomGeneration</Name>
@@ -112,6 +116,10 @@
     <ProjectReference Include="..\StarsRecords\StarsRecords.csproj">
       <Project>{bab30dd8-6ea5-4ead-852d-e7efb58711bd}</Project>
       <Name>StarsRecords</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\User\Desktop\HexagonGridGenerator\HexTools\HexTools.csproj">
+      <Project>{6f2c7b9d-614c-4c42-a501-39680533bcd2}</Project>
+      <Name>HexTools</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

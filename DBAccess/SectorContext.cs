@@ -29,5 +29,6 @@ namespace DBAccess
         public DbSet<FactionAsset> factionAssets { get; set; }
         public DbSet<NPC> npcs { get; set; }
 		public DbSet<Star> stars { get; set; }
+		public DbSet<TradeRoute> routes { get; set; }
     }
 }

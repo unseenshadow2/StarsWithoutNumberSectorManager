@@ -54,6 +54,7 @@
     <Compile Include="Supporting Sheets\Star.cs" />
     <Compile Include="Supporting Sheets\FactionAsset.cs" />
     <Compile Include="Supporting Sheets\NPC.cs" />
+    <Compile Include="Supporting Sheets\TradeRoute.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EnumerationClass\EnumerationClass.csproj">

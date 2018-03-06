@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MapDrawer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,18 @@ namespace WindowsFrontEnd
 		private void EntryForm_Load(object sender, EventArgs e)
 		{
 			Text = Program.Title;
+		}
+
+		private void btnSaveGrid_Click(object sender, EventArgs e)
+		{
+			sfdImage.ShowDialog();
+
+			if (sfdImage.FileName != String.Empty)
+			{
+				MapDraw draw = new MapDraw();
+				Image image = draw.DrawGrid();
+				image.Save(sfdImage.FileName);
+			}
 		}
 	}
 }

@@ -34,5 +34,10 @@ namespace WindowsFrontEnd
 				image.Save(sfdImage.FileName);
 			}
 		}
+
+		private void btnPlanets_Click(object sender, EventArgs e)
+		{
+			new PlanetForm().Show();
+		}
 	}
 }

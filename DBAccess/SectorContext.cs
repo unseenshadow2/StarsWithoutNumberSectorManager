@@ -30,5 +30,6 @@ namespace DBAccess
         public DbSet<NPC> npcs { get; set; }
 		public DbSet<Star> stars { get; set; }
 		public DbSet<TradeRoute> routes { get; set; }
+		public DbSet<NPCConnection> npcConnections { get; set; }
     }
 }

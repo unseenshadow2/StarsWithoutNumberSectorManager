@@ -19,6 +19,5 @@ namespace StarsRecords.Main_Sheets
         public string rewardsAvailable { get; set; }
         public string summaryOfEvents { get; set; }
         public string notes { get; set; }
-        public ICollection<NPC> npcs { get; set; }
     }
 }

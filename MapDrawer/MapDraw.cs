@@ -44,7 +44,6 @@ namespace MapDrawer
 		/// <returns>The drawn grid</returns>
 		public Image DrawGrid()
 		{
-			// TODO: Give background color
 			return grid.Draw(0, verticleOffset);
 		}
 
@@ -105,6 +104,11 @@ namespace MapDrawer
 			}
 		}
 
+		/// <summary>
+		/// Draws all the given trade routes.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void DrawTradeRoutes(object sender, HexagonGridDrawEventArgs e)
 		{
 			TradeRoute[] routes;
@@ -113,19 +117,31 @@ namespace MapDrawer
 
 			using (SectorContext db = new SectorContext())
 			{
-				routes = (from r in db.routes
-						select r).ToArray();
+				if (db.routes.Count() > 0)
+				{
+					//routes = (from r in db.routes
+					//		  select r).ToArray();
+					routes = db.routes.ToArray();
+				}
+				else
+				{
+					routes = null;
+					throw new Exception("Route count is zero!");
+				}
 			}
 
-			foreach (TradeRoute r in routes)
+			if (routes != null)
 			{
-				RegularHexagon hex1 = e.grid.Hexagons[r.star1Y, r.star1X];
-				RegularHexagon hex2 = e.grid.Hexagons[r.star2Y, r.star2X];
+				foreach (TradeRoute r in routes)
+				{
+					RegularHexagon hex1 = e.grid.Hexagons[r.star1Y, r.star1X];
+					RegularHexagon hex2 = e.grid.Hexagons[r.star2Y, r.star2X];
 
-				start = PointBetween(hex1.center, hex2.center, routePercentFromCenter);
-				end = PointBetween(hex2.center, hex1.center, routePercentFromCenter);
+					start = PointBetween(hex1.center, hex2.center, routePercentFromCenter);
+					end = PointBetween(hex2.center, hex1.center, routePercentFromCenter);
 
-				e.gr.DrawLine(routePen, start, end);
+					e.gr.DrawLine(routePen, start, end);
+				}
 			}
 		}
 
@@ -159,7 +175,14 @@ namespace MapDrawer
 			e.gr.Clear(backgroundColor);
 		}
 
-		// TODO: COMMENT
+		/// <summary>
+		/// Get's the point a certain percentage between the two given points.
+		/// If no percentDistance is given, defaults to 50% (or 0.5).
+		/// </summary>
+		/// <param name="p1">The first point. The percent distance is from this point.</param>
+		/// <param name="p2">The second point. The percent distance is to this point.</param>
+		/// <param name="percentDistance"></param>
+		/// <returns>The point between the two given</returns>
 		private PointF PointBetween(PointF p1, PointF p2, float percentDistance = 0.5f)
 		{
 			PointF toReturn = new PointF();
@@ -170,6 +193,14 @@ namespace MapDrawer
 			return toReturn;
 		}
 
+		/// <summary>
+		/// Get's the number a certain percentage between two floats.
+		/// If no percentDistance is given, defaults to 50% (or 0.5).
+		/// </summary>
+		/// <param name="f1">The first float. The percent distance is from this float.</param>
+		/// <param name="f2">The second float. The percent distance is to this float.</param>
+		/// <param name="percentDistance">The percentage distance between the two</param>
+		/// <returns>The float between the two given</returns>
 		private float FloatBetween(float f1, float f2, float percentDistance = 0.5f)
 		{
 			float difference = -(f1 - f2);

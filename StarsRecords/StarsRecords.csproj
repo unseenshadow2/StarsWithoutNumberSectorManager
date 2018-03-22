@@ -51,6 +51,7 @@
     <Compile Include="Main Sheets\Planet.cs" />
     <Compile Include="Main Sheets\Starship.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Supporting Sheets\NPCConnection.cs" />
     <Compile Include="Supporting Sheets\Star.cs" />
     <Compile Include="Supporting Sheets\FactionAsset.cs" />
     <Compile Include="Supporting Sheets\NPC.cs" />

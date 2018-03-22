@@ -30,11 +30,12 @@
         {
 			this.btnSaveGrid = new System.Windows.Forms.Button();
 			this.sfdImage = new System.Windows.Forms.SaveFileDialog();
+			this.btnPlanets = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// btnSaveGrid
 			// 
-			this.btnSaveGrid.Location = new System.Drawing.Point(106, 107);
+			this.btnSaveGrid.Location = new System.Drawing.Point(197, 227);
 			this.btnSaveGrid.Name = "btnSaveGrid";
 			this.btnSaveGrid.Size = new System.Drawing.Size(75, 23);
 			this.btnSaveGrid.TabIndex = 0;
@@ -48,11 +49,22 @@
 			this.sfdImage.FileName = "default";
 			this.sfdImage.Filter = "Protable Network Graphics|*.png|JPEG|*.jpg|Bitmap|*.bmp";
 			// 
+			// btnPlanets
+			// 
+			this.btnPlanets.Location = new System.Drawing.Point(13, 13);
+			this.btnPlanets.Name = "btnPlanets";
+			this.btnPlanets.Size = new System.Drawing.Size(75, 23);
+			this.btnPlanets.TabIndex = 1;
+			this.btnPlanets.Text = "Planets";
+			this.btnPlanets.UseVisualStyleBackColor = true;
+			this.btnPlanets.Click += new System.EventHandler(this.btnPlanets_Click);
+			// 
 			// EntryForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 262);
+			this.Controls.Add(this.btnPlanets);
 			this.Controls.Add(this.btnSaveGrid);
 			this.Name = "EntryForm";
 			this.Load += new System.EventHandler(this.EntryForm_Load);
@@ -64,6 +76,7 @@
 
 		private System.Windows.Forms.Button btnSaveGrid;
 		private System.Windows.Forms.SaveFileDialog sfdImage;
+		private System.Windows.Forms.Button btnPlanets;
 	}
 }
 

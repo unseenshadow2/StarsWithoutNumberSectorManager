@@ -45,7 +45,6 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.txtAtmosphere = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.mtbLocation = new System.Windows.Forms.MaskedTextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtName = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
@@ -76,6 +75,7 @@
 			this.panel10 = new System.Windows.Forms.Panel();
 			this.txtNotes = new System.Windows.Forms.TextBox();
 			this.label16 = new System.Windows.Forms.Label();
+			this.cbxLocation = new System.Windows.Forms.ComboBox();
 			this.groupBox1.SuspendLayout();
 			this.flowLayoutPanel1.SuspendLayout();
 			this.panel1.SuspendLayout();
@@ -175,6 +175,7 @@
 			// panel1
 			// 
 			this.panel1.AutoSize = true;
+			this.panel1.Controls.Add(this.cbxLocation);
 			this.panel1.Controls.Add(this.txtTags);
 			this.panel1.Controls.Add(this.label7);
 			this.panel1.Controls.Add(this.txtTechLevel);
@@ -185,7 +186,6 @@
 			this.panel1.Controls.Add(this.label4);
 			this.panel1.Controls.Add(this.txtAtmosphere);
 			this.panel1.Controls.Add(this.label3);
-			this.panel1.Controls.Add(this.mtbLocation);
 			this.panel1.Controls.Add(this.label2);
 			this.panel1.Controls.Add(this.txtName);
 			this.panel1.Controls.Add(this.label1);
@@ -277,14 +277,6 @@
 			this.label3.Size = new System.Drawing.Size(66, 13);
 			this.label3.TabIndex = 4;
 			this.label3.Text = "Atmosphere:";
-			// 
-			// mtbLocation
-			// 
-			this.mtbLocation.Location = new System.Drawing.Point(245, 6);
-			this.mtbLocation.Mask = "0000";
-			this.mtbLocation.Name = "mtbLocation";
-			this.mtbLocation.Size = new System.Drawing.Size(48, 20);
-			this.mtbLocation.TabIndex = 1;
 			// 
 			// label2
 			// 
@@ -608,6 +600,15 @@
 			this.label16.TabIndex = 0;
 			this.label16.Text = "Notes:";
 			// 
+			// cbxLocation
+			// 
+			this.cbxLocation.DisplayMember = "displayName";
+			this.cbxLocation.Location = new System.Drawing.Point(245, 6);
+			this.cbxLocation.Name = "cbxLocation";
+			this.cbxLocation.Size = new System.Drawing.Size(173, 21);
+			this.cbxLocation.TabIndex = 13;
+			this.cbxLocation.ValueMember = "displayName";
+			// 
 			// PlanetForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -661,7 +662,6 @@
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.TextBox txtAtmosphere;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.MaskedTextBox mtbLocation;
 		private System.Windows.Forms.TextBox txtTags;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.TextBox txtTechLevel;
@@ -695,5 +695,6 @@
 		private System.Windows.Forms.Panel panel10;
 		private System.Windows.Forms.TextBox txtNotes;
 		private System.Windows.Forms.Label label16;
+		private System.Windows.Forms.ComboBox cbxLocation;
 	}
 }

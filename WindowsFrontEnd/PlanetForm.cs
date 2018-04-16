@@ -1,9 +1,11 @@
 ﻿using DBAccess;
 using StarsRecords.Main_Sheets;
+using StarsRecords.Supporting_Sheets;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -58,7 +60,7 @@ namespace WindowsFrontEnd
 				if (toSave != null)
 				{
 					toSave.name = txtName.Text;
-					toSave.LocFromString(mtbLocation.Text);
+					toSave.locId = (cbxLocation.SelectedItem != null) ? ((Star)cbxLocation.SelectedItem).id : -1;
 					toSave.atmosphere = txtAtmosphere.Text;
 					toSave.temperature = txtTemperature.Text;
 					toSave.population = txtPopulation.Text;
@@ -91,7 +93,7 @@ namespace WindowsFrontEnd
 		private void btnNew_Click(object sender, EventArgs e)
 		{
 			txtName.Text = "";
-			mtbLocation.Text = "";
+			cbxLocation.SelectedItem = null;
 			txtAtmosphere.Text = "";
 			txtTemperature.Text = "";
 			txtPopulation.Text = "";
@@ -160,6 +162,7 @@ namespace WindowsFrontEnd
 		private void UpdateGUI(Planet planet)
 		{
 			UpdateListbox();
+			UpdateCombobox();
 			UpdateData(planet);
 		}
 
@@ -197,7 +200,6 @@ namespace WindowsFrontEnd
 		private void UpdateData(Planet planet)
 		{
 			txtName.Text = planet.name;
-			mtbLocation.Text = planet.LocToString();
 			txtAtmosphere.Text = planet.atmosphere;
 			txtTemperature.Text = planet.temperature;
 			txtPopulation.Text = planet.population;
@@ -212,6 +214,26 @@ namespace WindowsFrontEnd
 			txtThings.Text = planet.things;
 			txtPartyActivities.Text = planet.partyActivities;
 			txtNotes.Text = planet.notes;
+
+			cbxLocation.SelectedItem = (from Star s in cbxLocation.Items
+										where (planet.locId == s.id)
+										select s).FirstOrDefault();
+		}
+
+		/// <summary>
+		/// Updates the location combobox.
+		/// </summary>
+		private void UpdateCombobox()
+		{
+			cbxLocation.Items.Clear();
+
+			using (SectorContext db = new SectorContext())
+			{
+				foreach (Star s in db.stars)
+				{
+					cbxLocation.Items.Add(s);
+				}
+			}
 		}
 
 		/// <summary>
@@ -230,7 +252,11 @@ namespace WindowsFrontEnd
 					currentPlanetId = current.id;
 					UpdateGUI(current);
 				}
-				else UpdateListbox();
+				else
+				{
+					UpdateListbox();
+					UpdateCombobox();
+				}
 			}
 		}
 	}

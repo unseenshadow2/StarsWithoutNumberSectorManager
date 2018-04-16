@@ -65,6 +65,7 @@
 			this.btnSave.Name = "btnSave";
 			this.btnSave.Size = new System.Drawing.Size(131, 23);
 			this.btnSave.TabIndex = 6;
+			this.btnSave.TabStop = false;
 			this.btnSave.Text = "Save";
 			this.btnSave.UseVisualStyleBackColor = true;
 			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -95,7 +96,7 @@
 			// 
 			// lbxStars
 			// 
-			this.lbxStars.DisplayMember = "name";
+			this.lbxStars.DisplayMember = "displayName";
 			this.lbxStars.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.lbxStars.FormattingEnabled = true;
 			this.lbxStars.Location = new System.Drawing.Point(3, 16);
@@ -103,7 +104,7 @@
 			this.lbxStars.Size = new System.Drawing.Size(131, 256);
 			this.lbxStars.TabIndex = 0;
 			this.lbxStars.TabStop = false;
-			this.lbxStars.ValueMember = "name";
+			this.lbxStars.ValueMember = "displayName";
 			this.lbxStars.SelectedIndexChanged += new System.EventHandler(this.lbxStars_SelectedIndexChanged);
 			// 
 			// label1
@@ -166,6 +167,7 @@
 			// 
 			// StarForm
 			// 
+			this.AcceptButton = this.btnSave;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(407, 275);

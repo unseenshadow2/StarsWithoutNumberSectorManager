@@ -23,6 +23,11 @@ namespace WindowsFrontEnd
 			Text = Program.Title;
 		}
 
+		/// <summary>
+		/// Generate and save a hexagon grid map.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnSaveGrid_Click(object sender, EventArgs e)
 		{
 			sfdImage.ShowDialog();
@@ -35,9 +40,24 @@ namespace WindowsFrontEnd
 			}
 		}
 
+		/// <summary>
+		/// Show a new Planets form.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void btnPlanets_Click(object sender, EventArgs e)
 		{
 			new PlanetForm().Show();
+		}
+
+		/// <summary>
+		/// Show a new Stars form.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void btnStars_Click(object sender, EventArgs e)
+		{
+			new StarForm().Show();
 		}
 	}
 }

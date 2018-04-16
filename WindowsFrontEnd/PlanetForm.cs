@@ -118,7 +118,6 @@ namespace WindowsFrontEnd
 		/// <param name="e"></param>
 		private void btnDelete_Click(object sender, EventArgs e)
 		{
-			// TODO: Delete a planet and setup for a new planet
 			using (SectorContext db = new SectorContext())
 			{
 				if (db.planets.Count() > 0)
@@ -222,7 +221,7 @@ namespace WindowsFrontEnd
 		{
 			using (SectorContext db = new SectorContext())
 			{
-				if (db.planets.Count() > 1)
+				if (db.planets.Count() > 0)
 				{
 					Planet current = (from p in db.planets
 									  orderby p.id ascending

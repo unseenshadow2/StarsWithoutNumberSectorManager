@@ -35,23 +35,23 @@
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.txtTags = new System.Windows.Forms.TextBox();
+			this.label7 = new System.Windows.Forms.Label();
+			this.txtTechLevel = new System.Windows.Forms.TextBox();
+			this.label6 = new System.Windows.Forms.Label();
+			this.txtPopulation = new System.Windows.Forms.TextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.txtTemperature = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.txtAtmosphere = new System.Windows.Forms.TextBox();
+			this.label3 = new System.Windows.Forms.Label();
+			this.mtbLocation = new System.Windows.Forms.MaskedTextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtName = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.mtbLocation = new System.Windows.Forms.MaskedTextBox();
-			this.txtAtmosphere = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.txtTemperature = new System.Windows.Forms.TextBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.txtPopulation = new System.Windows.Forms.TextBox();
-			this.label5 = new System.Windows.Forms.Label();
-			this.txtTechLevel = new System.Windows.Forms.TextBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.txtTags = new System.Windows.Forms.TextBox();
-			this.label7 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.label8 = new System.Windows.Forms.Label();
 			this.txtCapitalAndGovernment = new System.Windows.Forms.TextBox();
+			this.label8 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.txtCulturalNotes = new System.Windows.Forms.TextBox();
 			this.label9 = new System.Windows.Forms.Label();
@@ -169,7 +169,7 @@
 			this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.flowLayoutPanel1.Location = new System.Drawing.Point(147, 0);
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			this.flowLayoutPanel1.Size = new System.Drawing.Size(738, 518);
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(654, 518);
 			this.flowLayoutPanel1.TabIndex = 6;
 			// 
 			// panel1
@@ -196,6 +196,96 @@
 			this.panel1.Size = new System.Drawing.Size(421, 148);
 			this.panel1.TabIndex = 0;
 			// 
+			// txtTags
+			// 
+			this.txtTags.AcceptsReturn = true;
+			this.txtTags.Location = new System.Drawing.Point(6, 100);
+			this.txtTags.Multiline = true;
+			this.txtTags.Name = "txtTags";
+			this.txtTags.Size = new System.Drawing.Size(135, 45);
+			this.txtTags.TabIndex = 6;
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(3, 84);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(34, 13);
+			this.label7.TabIndex = 12;
+			this.label7.Text = "Tags:";
+			// 
+			// txtTechLevel
+			// 
+			this.txtTechLevel.Location = new System.Drawing.Point(283, 58);
+			this.txtTechLevel.Name = "txtTechLevel";
+			this.txtTechLevel.Size = new System.Drawing.Size(135, 20);
+			this.txtTechLevel.TabIndex = 5;
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(216, 61);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(64, 13);
+			this.label6.TabIndex = 10;
+			this.label6.Text = "Tech Level:";
+			// 
+			// txtPopulation
+			// 
+			this.txtPopulation.Location = new System.Drawing.Point(75, 58);
+			this.txtPopulation.Name = "txtPopulation";
+			this.txtPopulation.Size = new System.Drawing.Size(135, 20);
+			this.txtPopulation.TabIndex = 4;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(3, 61);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(60, 13);
+			this.label5.TabIndex = 8;
+			this.label5.Text = "Population:";
+			// 
+			// txtTemperature
+			// 
+			this.txtTemperature.Location = new System.Drawing.Point(283, 32);
+			this.txtTemperature.Name = "txtTemperature";
+			this.txtTemperature.Size = new System.Drawing.Size(135, 20);
+			this.txtTemperature.TabIndex = 3;
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(216, 35);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(70, 13);
+			this.label4.TabIndex = 6;
+			this.label4.Text = "Temperature:";
+			// 
+			// txtAtmosphere
+			// 
+			this.txtAtmosphere.Location = new System.Drawing.Point(75, 32);
+			this.txtAtmosphere.Name = "txtAtmosphere";
+			this.txtAtmosphere.Size = new System.Drawing.Size(135, 20);
+			this.txtAtmosphere.TabIndex = 2;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(3, 35);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(66, 13);
+			this.label3.TabIndex = 4;
+			this.label3.Text = "Atmosphere:";
+			// 
+			// mtbLocation
+			// 
+			this.mtbLocation.Location = new System.Drawing.Point(245, 6);
+			this.mtbLocation.Mask = "0000";
+			this.mtbLocation.Name = "mtbLocation";
+			this.mtbLocation.Size = new System.Drawing.Size(48, 20);
+			this.mtbLocation.TabIndex = 1;
+			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
@@ -221,96 +311,6 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Name:";
 			// 
-			// mtbLocation
-			// 
-			this.mtbLocation.Location = new System.Drawing.Point(245, 6);
-			this.mtbLocation.Mask = "0000";
-			this.mtbLocation.Name = "mtbLocation";
-			this.mtbLocation.Size = new System.Drawing.Size(48, 20);
-			this.mtbLocation.TabIndex = 1;
-			// 
-			// txtAtmosphere
-			// 
-			this.txtAtmosphere.Location = new System.Drawing.Point(75, 32);
-			this.txtAtmosphere.Name = "txtAtmosphere";
-			this.txtAtmosphere.Size = new System.Drawing.Size(135, 20);
-			this.txtAtmosphere.TabIndex = 2;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(3, 35);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(66, 13);
-			this.label3.TabIndex = 4;
-			this.label3.Text = "Atmosphere:";
-			// 
-			// txtTemperature
-			// 
-			this.txtTemperature.Location = new System.Drawing.Point(283, 32);
-			this.txtTemperature.Name = "txtTemperature";
-			this.txtTemperature.Size = new System.Drawing.Size(135, 20);
-			this.txtTemperature.TabIndex = 3;
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(216, 35);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(70, 13);
-			this.label4.TabIndex = 6;
-			this.label4.Text = "Temperature:";
-			// 
-			// txtPopulation
-			// 
-			this.txtPopulation.Location = new System.Drawing.Point(75, 58);
-			this.txtPopulation.Name = "txtPopulation";
-			this.txtPopulation.Size = new System.Drawing.Size(135, 20);
-			this.txtPopulation.TabIndex = 4;
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(3, 61);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(60, 13);
-			this.label5.TabIndex = 8;
-			this.label5.Text = "Population:";
-			// 
-			// txtTechLevel
-			// 
-			this.txtTechLevel.Location = new System.Drawing.Point(283, 58);
-			this.txtTechLevel.Name = "txtTechLevel";
-			this.txtTechLevel.Size = new System.Drawing.Size(135, 20);
-			this.txtTechLevel.TabIndex = 5;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(216, 61);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(64, 13);
-			this.label6.TabIndex = 10;
-			this.label6.Text = "Tech Level:";
-			// 
-			// txtTags
-			// 
-			this.txtTags.AcceptsReturn = true;
-			this.txtTags.Location = new System.Drawing.Point(6, 100);
-			this.txtTags.Multiline = true;
-			this.txtTags.Name = "txtTags";
-			this.txtTags.Size = new System.Drawing.Size(135, 45);
-			this.txtTags.TabIndex = 6;
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(3, 84);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(34, 13);
-			this.label7.TabIndex = 12;
-			this.label7.Text = "Tags:";
-			// 
 			// panel2
 			// 
 			this.panel2.AutoScroll = true;
@@ -321,16 +321,6 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(306, 269);
 			this.panel2.TabIndex = 1;
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Dock = System.Windows.Forms.DockStyle.Top;
-			this.label8.Location = new System.Drawing.Point(0, 0);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(125, 13);
-			this.label8.TabIndex = 0;
-			this.label8.Text = "Capital And Government:";
 			// 
 			// txtCapitalAndGovernment
 			// 
@@ -343,6 +333,16 @@
 			this.txtCapitalAndGovernment.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 			this.txtCapitalAndGovernment.Size = new System.Drawing.Size(300, 250);
 			this.txtCapitalAndGovernment.TabIndex = 1;
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Dock = System.Windows.Forms.DockStyle.Top;
+			this.label8.Location = new System.Drawing.Point(0, 0);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(125, 13);
+			this.label8.TabIndex = 0;
+			this.label8.Text = "Capital And Government:";
 			// 
 			// panel3
 			// 
@@ -612,7 +612,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(885, 518);
+			this.ClientSize = new System.Drawing.Size(801, 518);
 			this.Controls.Add(this.flowLayoutPanel1);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "PlanetForm";

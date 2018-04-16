@@ -21,16 +21,6 @@ namespace WindowsFrontEnd
         [STAThread]
         static void Main()
         {
-            //using (SectorContext db = new SectorContext())
-            //{
-            //    Planet p = new Planet();
-            //    p.name = "roar";
-
-            //    db.planets.Add(p);
-
-            //    db.SaveChanges();
-            //}
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new EntryForm());

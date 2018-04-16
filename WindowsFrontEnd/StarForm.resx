@@ -117,18 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="sfdImage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Each of the buttons off to the left will open
-new data entry windows. The "Save Grid"
-button will ask for a file to save to. Once
-a file has been given, it will draw a map
-using a hexagon grid and placing the stars
-and routes onto the map.
-
-Please note that currently trade routes are
-disabled.</value>
-  </data>
 </root>

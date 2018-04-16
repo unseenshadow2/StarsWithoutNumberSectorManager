@@ -126,7 +126,7 @@ namespace MapDrawer
 				else
 				{
 					routes = null;
-					throw new Exception("Route count is zero!");
+					//throw new Exception("Route count is zero!");
 				}
 			}
 

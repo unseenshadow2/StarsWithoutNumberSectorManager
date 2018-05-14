@@ -81,13 +81,14 @@
 			this.btnRoutes.TabIndex = 3;
 			this.btnRoutes.Text = "Routes";
 			this.btnRoutes.UseVisualStyleBackColor = true;
+			this.btnRoutes.Click += new System.EventHandler(this.btnRoutes_Click);
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Location = new System.Drawing.Point(95, 13);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(206, 117);
+			this.label1.Size = new System.Drawing.Size(206, 78);
 			this.label1.TabIndex = 4;
 			this.label1.Text = resources.GetString("label1.Text");
 			// 

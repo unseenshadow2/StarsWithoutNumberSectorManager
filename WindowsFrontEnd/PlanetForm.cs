@@ -63,6 +63,7 @@ namespace WindowsFrontEnd
 					toSave.locId = (cbxLocation.SelectedItem != null) ? ((Star)cbxLocation.SelectedItem).id : -1;
 					toSave.atmosphere = txtAtmosphere.Text;
 					toSave.temperature = txtTemperature.Text;
+					toSave.biosphere = txtBiosphere.Text;
 					toSave.population = txtPopulation.Text;
 					toSave.techLevel = txtTechLevel.Text;
 					toSave.tags = txtTags.Text;
@@ -96,6 +97,7 @@ namespace WindowsFrontEnd
 			cbxLocation.SelectedItem = null;
 			txtAtmosphere.Text = "";
 			txtTemperature.Text = "";
+			txtBiosphere.Text = "";
 			txtPopulation.Text = "";
 			txtTechLevel.Text = "";
 			txtTags.Text = "";
@@ -202,6 +204,7 @@ namespace WindowsFrontEnd
 			txtName.Text = planet.name;
 			txtAtmosphere.Text = planet.atmosphere;
 			txtTemperature.Text = planet.temperature;
+			txtBiosphere.Text = planet.biosphere;
 			txtPopulation.Text = planet.population;
 			txtTechLevel.Text = planet.techLevel;
 			txtTags.Text = planet.tags;

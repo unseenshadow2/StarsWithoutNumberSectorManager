@@ -59,5 +59,15 @@ namespace WindowsFrontEnd
 		{
 			new StarForm().Show();
 		}
+
+		/// <summary>
+		/// Show a new Routes form.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void btnRoutes_Click(object sender, EventArgs e)
+		{
+			new RouteForm().Show();
+		}
 	}
 }

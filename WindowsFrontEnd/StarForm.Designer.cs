@@ -39,17 +39,19 @@
 			this.txtName = new System.Windows.Forms.TextBox();
 			this.nudX = new System.Windows.Forms.NumericUpDown();
 			this.nudY = new System.Windows.Forms.NumericUpDown();
+			this.panel1 = new System.Windows.Forms.Panel();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nudX)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudY)).BeginInit();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.panel1);
 			this.groupBox1.Controls.Add(this.btnSave);
 			this.groupBox1.Controls.Add(this.btnNew);
 			this.groupBox1.Controls.Add(this.btnDelete);
-			this.groupBox1.Controls.Add(this.lbxStars);
 			this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
 			this.groupBox1.Location = new System.Drawing.Point(0, 0);
 			this.groupBox1.Name = "groupBox1";
@@ -99,9 +101,9 @@
 			this.lbxStars.DisplayMember = "displayName";
 			this.lbxStars.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.lbxStars.FormattingEnabled = true;
-			this.lbxStars.Location = new System.Drawing.Point(3, 16);
+			this.lbxStars.Location = new System.Drawing.Point(0, 0);
 			this.lbxStars.Name = "lbxStars";
-			this.lbxStars.Size = new System.Drawing.Size(131, 256);
+			this.lbxStars.Size = new System.Drawing.Size(131, 187);
 			this.lbxStars.TabIndex = 0;
 			this.lbxStars.TabStop = false;
 			this.lbxStars.ValueMember = "displayName";
@@ -165,6 +167,15 @@
 			this.nudY.Size = new System.Drawing.Size(48, 20);
 			this.nudY.TabIndex = 3;
 			// 
+			// panel1
+			// 
+			this.panel1.Controls.Add(this.lbxStars);
+			this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel1.Location = new System.Drawing.Point(3, 16);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(131, 187);
+			this.panel1.TabIndex = 4;
+			// 
 			// StarForm
 			// 
 			this.AcceptButton = this.btnSave;
@@ -184,6 +195,7 @@
 			this.groupBox1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.nudX)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudY)).EndInit();
+			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -202,5 +214,6 @@
 		private System.Windows.Forms.TextBox txtName;
 		private System.Windows.Forms.NumericUpDown nudX;
 		private System.Windows.Forms.NumericUpDown nudY;
+		private System.Windows.Forms.Panel panel1;
 	}
 }

@@ -33,8 +33,12 @@
 			this.btnNew = new System.Windows.Forms.Button();
 			this.lbxPlanets = new System.Windows.Forms.ListBox();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.panel11 = new System.Windows.Forms.Panel();
 			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.txtBiosphere = new System.Windows.Forms.TextBox();
+			this.label17 = new System.Windows.Forms.Label();
+			this.cbxLocation = new System.Windows.Forms.ComboBox();
 			this.txtTags = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.txtTechLevel = new System.Windows.Forms.TextBox();
@@ -75,8 +79,8 @@
 			this.panel10 = new System.Windows.Forms.Panel();
 			this.txtNotes = new System.Windows.Forms.TextBox();
 			this.label16 = new System.Windows.Forms.Label();
-			this.cbxLocation = new System.Windows.Forms.ComboBox();
 			this.groupBox1.SuspendLayout();
+			this.panel11.SuspendLayout();
 			this.flowLayoutPanel1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
@@ -131,9 +135,9 @@
 			this.lbxPlanets.DisplayMember = "name";
 			this.lbxPlanets.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.lbxPlanets.HorizontalScrollbar = true;
-			this.lbxPlanets.Location = new System.Drawing.Point(3, 16);
+			this.lbxPlanets.Location = new System.Drawing.Point(0, 0);
 			this.lbxPlanets.Name = "lbxPlanets";
-			this.lbxPlanets.Size = new System.Drawing.Size(141, 453);
+			this.lbxPlanets.Size = new System.Drawing.Size(141, 430);
 			this.lbxPlanets.TabIndex = 4;
 			this.lbxPlanets.TabStop = false;
 			this.lbxPlanets.ValueMember = "name";
@@ -141,8 +145,8 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.panel11);
 			this.groupBox1.Controls.Add(this.btnSave);
-			this.groupBox1.Controls.Add(this.lbxPlanets);
 			this.groupBox1.Controls.Add(this.btnNew);
 			this.groupBox1.Controls.Add(this.btnDelete);
 			this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -152,6 +156,15 @@
 			this.groupBox1.TabIndex = 5;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Planets:";
+			// 
+			// panel11
+			// 
+			this.panel11.Controls.Add(this.lbxPlanets);
+			this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel11.Location = new System.Drawing.Point(3, 16);
+			this.panel11.Name = "panel11";
+			this.panel11.Size = new System.Drawing.Size(141, 430);
+			this.panel11.TabIndex = 10;
 			// 
 			// flowLayoutPanel1
 			// 
@@ -175,6 +188,8 @@
 			// panel1
 			// 
 			this.panel1.AutoSize = true;
+			this.panel1.Controls.Add(this.txtBiosphere);
+			this.panel1.Controls.Add(this.label17);
 			this.panel1.Controls.Add(this.cbxLocation);
 			this.panel1.Controls.Add(this.txtTags);
 			this.panel1.Controls.Add(this.label7);
@@ -196,19 +211,44 @@
 			this.panel1.Size = new System.Drawing.Size(421, 148);
 			this.panel1.TabIndex = 0;
 			// 
+			// txtBiosphere
+			// 
+			this.txtBiosphere.Location = new System.Drawing.Point(75, 83);
+			this.txtBiosphere.Name = "txtBiosphere";
+			this.txtBiosphere.Size = new System.Drawing.Size(135, 20);
+			this.txtBiosphere.TabIndex = 6;
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.Location = new System.Drawing.Point(3, 86);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(57, 13);
+			this.label17.TabIndex = 14;
+			this.label17.Text = "Biosphere:";
+			// 
+			// cbxLocation
+			// 
+			this.cbxLocation.DisplayMember = "displayName";
+			this.cbxLocation.Location = new System.Drawing.Point(245, 6);
+			this.cbxLocation.Name = "cbxLocation";
+			this.cbxLocation.Size = new System.Drawing.Size(173, 21);
+			this.cbxLocation.TabIndex = 13;
+			this.cbxLocation.ValueMember = "displayName";
+			// 
 			// txtTags
 			// 
 			this.txtTags.AcceptsReturn = true;
-			this.txtTags.Location = new System.Drawing.Point(6, 100);
+			this.txtTags.Location = new System.Drawing.Point(219, 100);
 			this.txtTags.Multiline = true;
 			this.txtTags.Name = "txtTags";
 			this.txtTags.Size = new System.Drawing.Size(135, 45);
-			this.txtTags.TabIndex = 6;
+			this.txtTags.TabIndex = 7;
 			// 
 			// label7
 			// 
 			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(3, 84);
+			this.label7.Location = new System.Drawing.Point(216, 84);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(34, 13);
 			this.label7.TabIndex = 12;
@@ -600,15 +640,6 @@
 			this.label16.TabIndex = 0;
 			this.label16.Text = "Notes:";
 			// 
-			// cbxLocation
-			// 
-			this.cbxLocation.DisplayMember = "displayName";
-			this.cbxLocation.Location = new System.Drawing.Point(245, 6);
-			this.cbxLocation.Name = "cbxLocation";
-			this.cbxLocation.Size = new System.Drawing.Size(173, 21);
-			this.cbxLocation.TabIndex = 13;
-			this.cbxLocation.ValueMember = "displayName";
-			// 
 			// PlanetForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -620,6 +651,7 @@
 			this.Text = "PlanetForm";
 			this.Load += new System.EventHandler(this.PlanetForm_Load);
 			this.groupBox1.ResumeLayout(false);
+			this.panel11.ResumeLayout(false);
 			this.flowLayoutPanel1.ResumeLayout(false);
 			this.flowLayoutPanel1.PerformLayout();
 			this.panel1.ResumeLayout(false);
@@ -696,5 +728,8 @@
 		private System.Windows.Forms.TextBox txtNotes;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.ComboBox cbxLocation;
+		private System.Windows.Forms.Panel panel11;
+		private System.Windows.Forms.TextBox txtBiosphere;
+		private System.Windows.Forms.Label label17;
 	}
 }

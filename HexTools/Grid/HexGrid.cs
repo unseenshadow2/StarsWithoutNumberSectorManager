@@ -42,6 +42,7 @@ namespace HexTools.Grid
 		// The HexGrid's events
 		public event EventHandler<SingleHexagonDrawEventArgs> SingleHexDraw;
 		public event EventHandler<HexagonGridDrawEventArgs> HexagonGridDraw;
+		public event EventHandler<HexagonGridDrawEventArgs> BeforeGridDraw;
 
 		// How high is each hex and the calculated value of each hexes width
 		private float _hexHeight = 300f;
@@ -225,6 +226,7 @@ namespace HexTools.Grid
 
 			// Setup for drawing
 			ResizeGrid();
+			OnBeforeGridDraw(gridArgs);
 
 			// Draw
 			for (int row = 0; row < rows; row++)
@@ -275,6 +277,15 @@ namespace HexTools.Grid
 		protected virtual void OnHexagonGridDraw(HexagonGridDrawEventArgs e)
 		{
 			HexagonGridDraw?.Invoke(this, e);
+		}
+
+		/// <summary>
+		/// Runs the events for BeforeGridDraw, protecting against null values.
+		/// </summary>
+		/// <param name="e">The arguments to be passed on</param>
+		protected virtual void OnBeforeGridDraw(HexagonGridDrawEventArgs e)
+		{
+			BeforeGridDraw?.Invoke(this, e);
 		}
 	}
 }

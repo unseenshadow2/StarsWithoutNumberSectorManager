@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumerationClass", "Enumera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomGeneration", "RandomGeneration\RandomGeneration.csproj", "{43DF421E-C4C8-46A3-92A3-C6575F9457CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexTools", "C:\Users\User\Desktop\HexagonGridGenerator\HexTools\HexTools.csproj", "{6F2C7B9D-614C-4C42-A501-39680533BCD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexTools", "HexTools\HexTools.csproj", "{6F2C7B9D-614C-4C42-A501-39680533BCD2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapDrawer", "MapDrawer\MapDrawer.csproj", "{E49455B7-CB17-486A-9E9F-66A620C73C25}"
 EndProject
